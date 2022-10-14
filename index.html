@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root"></div>
+    <script type="text/babel" src="joker.jsx"></script>
+    <script type="text/babel">
+        const course = "joker"
+
+        const joker = [
+
+            {
+                "name" : "batman"
+            },
+            {
+                "name" : "joker"
+            },
+            {
+                "name" : "superman"
+            }
+        ]
+
+        const hihi = [
+
+            <h1 key="1">okeoke</h1>,
+            <h2 key="2">dcm</h2>
+        ]
+
+        const jsx = (
+
+            <ul>
+                {
+                    joker.map((name, index) => {
+
+                        return (
+                            
+                        <React.Fragment>
+                            <li key={index}>{name.name}, {course}</li>
+                            <h1>joker</h1>
+                            </React.Fragment>
+                        )
+                    })
+                    
+                    // <h1>{course}</h1>
+                }
+                {
+                    // console.log(course)
+                    //"docker",
+                    //"hoanler"
+                    //hihi.map((item) => item)
+                    hihi
+                }
+                <Ler 
+                    title = "adoft hoanler"
+                    hoanler = "dcm hoanler"
+                    key="123"
+                    joker = {function hihi() {
+
+                        return "adoft joker"
+                    }}
+                />
+                <App />
+            </ul>
+        )
+
+        ReactDOM.render(jsx, document.getElementById("root"))
+        //ReactDOM.render(jsx, document.getElementById("root"))
+
+    </script>
+    <script type="text/javascript">
+        hello = "quang"
+        console.log(hello)
+    </script>
+    <script type="text/javascript" src="code.js">
+
+        //console.log(hello)
+    </script>
+</body>
+</html>
